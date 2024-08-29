@@ -18,4 +18,24 @@
   .font-italic {
     font-style: italic;
   }
+
+  .text-stroke {
+    -webkit-text-stroke: 2px  #FEDA03;
+  }
+  
+  .text-gradient {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    background: linear-gradient(179.46deg, #FA006E 11.61%, rgba(250, 0, 110, 0) 100.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+body {
+  background-color: #151526;
 }
