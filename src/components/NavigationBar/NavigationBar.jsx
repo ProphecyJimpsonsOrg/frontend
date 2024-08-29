@@ -99,11 +99,11 @@ function NavList() {
       </Typography>
       <Typography
         as='a'
-        href='#'
+        href='/create'
         variant='small'
         className='font-medium text-white hover:text-orange-500'
       >
-        <ListItem className='flex items-center gap-2 py-2 pr-4 '>Docs</ListItem>
+        <ListItem className='flex items-center gap-2 py-2 pr-4'>Docs</ListItem>
       </Typography>
       <Typography
         as='a'
@@ -113,15 +113,25 @@ function NavList() {
       >
         <ListItem className='flex items-center gap-2 py-2 pr-4 '>Blog</ListItem>
       </Typography>
-      <NavListMenu />
       <Typography
         as='a'
         href='#'
         variant='small'
         className='font-medium text-white hover:text-orange-500'
       >
-        <ListItem className='flex items-center gap-2 py-2 pr-4'>
+        <ListItem className='flex items-center gap-2 py-2 pr-4 '>
           Contact
+        </ListItem>
+      </Typography>
+      <NavListMenu />
+      <Typography
+        as='a'
+        href='/create'
+        variant='small'
+        className='font-medium text-white hover:text-orange-500'
+      >
+        <ListItem className='flex items-center gap-2 py-2 pr-4'>
+          Create NFT
         </ListItem>
       </Typography>
     </List>

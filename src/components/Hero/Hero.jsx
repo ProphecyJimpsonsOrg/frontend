@@ -1,3 +1,6 @@
+import hero from '../../assets/images/hero1.png';
+import verified from '../../assets/images/verified.png';
+
 function Hero() {
   return (
     <div className='max-w-screen-xl mx-auto mt-20 py-16 flex flex-col lg:flex-row items-center'>
@@ -27,8 +30,17 @@ function Hero() {
         </div>
       </div>
       <div className='lg:w-5/12 mt-12 lg:mt-0 text-center lg:text-right'>
-        <div className='hero__featured relative inline-block'>
-          Image goes here...
+        <div className='relative inline-block rounded-lg bg-white/5 border border-white/10 shadow-[0px_0px_70px_rgba(5,5,20,0.2)] backdrop-blur-lg'>
+          <img
+            className='h-96 w-full rounded-lg object-cover object-center'
+            src={hero}
+            alt='Hero Image'
+          />
+          <img
+            src={verified}
+            alt='Verified Icon'
+            className='absolute bottom-[5%] left-[7%] w-[27%] animate-rotate-3d rounded-full shadow-xl shadow-blue-gray-900/50'
+          />
         </div>
       </div>
     </div>

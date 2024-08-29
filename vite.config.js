@@ -6,6 +6,11 @@ import autoprefixer from 'autoprefixer';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
   css: {
     postcss: {
       plugins: [tailwindcss, autoprefixer],
