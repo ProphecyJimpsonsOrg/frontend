@@ -4,7 +4,7 @@ import App from './App.jsx';
 import './styles/global.css';
 
 import { ThemeProvider } from '@material-tailwind/react';
-import ErrorBoundary from './components/ErrorBoundary/ErrorBoundar5y.jsx';
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

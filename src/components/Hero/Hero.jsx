@@ -26,6 +26,13 @@ function Hero() {
             >
               Create NFT
             </a>
+
+            <a
+              href='#'
+              className='inline-flex items-center py-2 px-12 border border-orange-300 text-text-500 text-sm font-semibold rounded-md transition-transform transform hover:scale-105 bg-orange-800 shadow-lg hover:bg-orange-800 hover:border-black-500 hover:text-black-200'
+            >
+              Join Presale
+            </a>
           </div>
         </div>
       </div>
