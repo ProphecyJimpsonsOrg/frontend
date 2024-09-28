@@ -1,9 +1,12 @@
+import WalletProvider from './context/WalletContext';
 import Home from './pages/Home';
 
 function App() {
   return (
     <>
-      <Home />
+      <WalletProvider>
+        <Home />
+      </WalletProvider>
     </>
   );
 }

@@ -17,6 +17,7 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
+import ConnectWalletButton from '../ConnectWalletButton/ConnectWalletButton';
 
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -163,13 +164,7 @@ function NavigationBar() {
           <NavList />
         </div>
         <div className='hidden gap-2 lg:flex'>
-          <Button
-            size='sm'
-            color='orange'
-            className='text-white hover:bg-orange-500'
-          >
-            Connect Wallet
-          </Button>
+          <ConnectWalletButton />
         </div>
         <IconButton
           variant='text'
