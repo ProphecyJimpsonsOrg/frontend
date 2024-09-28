@@ -19,12 +19,17 @@ export const WalletProvider = ({ children }) => {
 
     if (provider) {
       try {
-        const response = await provider.connect();
+        const response = await provider.request({ method: 'connect' });
+        setPublicKey(response.publicKey.toString());
         setIsConnected(true);
         console.log('Wallet Connected: ', response.publicKey.toString());
       } catch (err) {
         console.error('User reject the connection request: ', err);
       }
+    } else {
+      alert(
+        'Phantom wallet is not installed. Please install it from from "https://phantom.app/"'
+      );
     }
   };
 
