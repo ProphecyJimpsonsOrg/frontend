@@ -1,8 +1,12 @@
 /* Detect Phantom is installed or not and return the provider if installed */
 
 export const getProvider = () => {
-  // Check if phantom is installed
-  if (window?.solana.isPhantom) {
+  if (
+    typeof window !== 'undefined' &&
+    window.solana &&
+    window.solana.isPhantom
+  ) {
+    // return phantom is available
     return window.solana;
   }
 
